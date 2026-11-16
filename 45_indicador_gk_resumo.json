@@ -1,0 +1,45 @@
+{
+  "tolerance_pN": 1e-08,
+  "n_cases": 52,
+  "python_numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "reference_checks": [
+    {
+      "id": "r0.28209479177387814_b0.0_pi_e0.03",
+      "direct_vs_primitive_abs": 2.400479526128077e-61
+    },
+    {
+      "id": "r0.36_b0.1_zero_e0.15",
+      "direct_vs_primitive_abs": 0.0
+    }
+  ],
+  "methods": {
+    "gk": {
+      "failed": 2,
+      "false_safe": 2,
+      "flagged": 0,
+      "warnings": 2,
+      "max_error": 2.42437758757319e-08,
+      "total_law_evaluations": 32466,
+      "sum_median_time_ms": 7.29325
+    },
+    "guarded": {
+      "failed": 0,
+      "false_safe": 0,
+      "flagged": 32,
+      "warnings": 0,
+      "max_error": 2.6385080786894832e-09,
+      "total_law_evaluations": 14994,
+      "sum_median_time_ms": 3.619665
+    },
+    "all": {
+      "failed": 0,
+      "false_safe": 0,
+      "flagged": 32,
+      "warnings": 0,
+      "max_error": 1.7763568394002505e-15,
+      "total_law_evaluations": 2688,
+      "sum_median_time_ms": 1.159584
+    }
+  }
+}

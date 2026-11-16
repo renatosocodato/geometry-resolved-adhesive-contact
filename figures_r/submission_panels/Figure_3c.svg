@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='510.24pt' height='170.08pt' viewBox='0 0 510.24 170.08'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1MTAuMjR8MC4wMHwxNzAuMDg='>
+    <rect x='0.00' y='0.00' width='510.24' height='170.08' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHwxNzAuMDg=)'>
+<rect x='0.00' y='0.000000000000028' width='510.24' height='170.08' style='stroke-width: 0.97; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjAuMzF8NTA1LjI1fDQuOTh8MTExLjk3'>
+    <rect x='60.31' y='4.98' width='444.95' height='106.99' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjAuMzF8NTA1LjI1fDQuOTh8MTExLjk3)'>
+<rect x='60.31' y='4.98' width='444.95' height='106.99' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
+<rect x='60.31' y='15.35' width='368.42' height='19.39' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #315778;' />
+<rect x='60.31' y='48.78' width='153.51' height='19.39' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #315778;' />
+<rect x='60.31' y='82.21' width='44.05' height='19.39' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #315778;' />
+<rect x='428.72' y='15.35' width='0.00' height='19.39' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #C29522;' />
+<rect x='213.81' y='48.78' width='13.89' height='19.39' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #C29522;' />
+<rect x='104.36' y='82.21' width='13.89' height='19.39' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #C29522;' />
+<text x='432.73' y='28.25' style='font-size: 8.96px;fill: #202B37; font-family: "Arial";' textLength='26.73px' lengthAdjust='spacingAndGlyphs'>11,592</text>
+<text x='231.44' y='61.68' style='font-size: 8.96px;fill: #202B37; font-family: "Arial";' textLength='24.91px' lengthAdjust='spacingAndGlyphs'> 5,267</text>
+<text x='121.98' y='95.11' style='font-size: 8.96px;fill: #202B37; font-family: "Arial";' textLength='24.91px' lengthAdjust='spacingAndGlyphs'> 1,823</text>
+</g>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHwxNzAuMDg=)'>
+<text x='58.31' y='95.31' text-anchor='end' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='34.86px' lengthAdjust='spacingAndGlyphs'>Split GK</text>
+<text x='58.31' y='61.87' text-anchor='end' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='53.33px' lengthAdjust='spacingAndGlyphs'>Guarded GK</text>
+<text x='58.31' y='28.44' text-anchor='end' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='53.34px' lengthAdjust='spacingAndGlyphs'>Adaptive GK</text>
+<polyline points='60.31,111.97 505.25,111.97 ' style='stroke-width: 0.53; stroke-linecap: square;' />
+<polyline points='60.31,114.46 60.31,111.97 ' style='stroke-width: 0.53; stroke-linecap: butt;' />
+<polyline points='219.22,114.46 219.22,111.97 ' style='stroke-width: 0.53; stroke-linecap: butt;' />
+<polyline points='378.13,114.46 378.13,111.97 ' style='stroke-width: 0.53; stroke-linecap: butt;' />
+<text x='60.31' y='123.25' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='5.28px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='219.22' y='123.25' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='21.12px' lengthAdjust='spacingAndGlyphs'>5000</text>
+<text x='378.13' y='123.25' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='26.41px' lengthAdjust='spacingAndGlyphs'>10000</text>
+<text x='282.78' y='134.75' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='172.33px' lengthAdjust='spacingAndGlyphs'>Geometry evaluations across 18 cases</text>
+<rect x='182.00' y='146.63' width='201.55' height='18.47' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
+<rect x='186.98' y='151.61' width='17.28' height='8.50' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
+<rect x='187.63' y='152.26' width='15.99' height='7.22' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #C29522;' />
+<rect x='262.76' y='151.61' width='17.28' height='8.50' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
+<rect x='263.40' y='152.26' width='15.99' height='7.22' style='stroke-width: 0.97; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #315778;' />
+<text x='209.25' y='159.09' style='font-size: 9.00px;fill: #202B37; font-family: "Arial";' textLength='48.50px' lengthAdjust='spacingAndGlyphs'>Root search</text>
+<text x='285.02' y='159.09' style='font-size: 9.00px;fill: #202B37; font-family: "Arial";' textLength='93.50px' lengthAdjust='spacingAndGlyphs'>During force integration</text>
+<text x='3.62' y='13.96' style='font-size: 13.00px; font-weight: bold; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>c</text>
+</g>
+</g>
+</svg>

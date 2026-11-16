@@ -1,0 +1,36 @@
+{
+  "circular": {
+    "gk": {
+      "n_cases": 14,
+      "tolerance_exceedances": 0,
+      "max_abs_error_pN": 4.9829388964243904e-09
+    },
+    "guarded": {
+      "n_cases": 14,
+      "tolerance_exceedances": 0,
+      "max_abs_error_pN": 1.7151984043131674e-11
+    },
+    "all": {
+      "n_cases": 14,
+      "tolerance_exceedances": 0,
+      "max_abs_error_pN": 1.734723475976807e-18
+    }
+  },
+  "noncircular": {
+    "gk": {
+      "n_cases": 5,
+      "tolerance_exceedances": 0,
+      "max_abs_error_pN": 1.4548339992021103e-10
+    },
+    "guarded": {
+      "n_cases": 5,
+      "tolerance_exceedances": 0,
+      "max_abs_error_pN": 8.037461429917514e-12
+    },
+    "all": {
+      "n_cases": 5,
+      "tolerance_exceedances": 0,
+      "max_abs_error_pN": 9.75781955236954e-19
+    }
+  }
+}

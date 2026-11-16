@@ -1,0 +1,52 @@
+{
+  "n_cases": 18,
+  "tolerance_pN": 1e-08,
+  "reference_checks": [
+    {
+      "id": "b0.0_pi_e0.055",
+      "abs_difference": 6.2703381511063005e-49
+    },
+    {
+      "id": "b0.1_zero_e0.13",
+      "abs_difference": 3.4139523320567506e-46
+    }
+  ],
+  "methods": {
+    "gk": {
+      "n": 18,
+      "failed": 0,
+      "false_safe": 0,
+      "warnings": 0,
+      "flagged": 0,
+      "max_error": 6.73030044889833e-10,
+      "law_evals": 11592,
+      "root_geometry_evals": 0,
+      "total_geometry_evals": 11592,
+      "sum_median_ms": 6.271504
+    },
+    "guarded": {
+      "n": 18,
+      "failed": 0,
+      "false_safe": 0,
+      "warnings": 0,
+      "flagged": 12,
+      "max_error": 2.1121593363204738e-10,
+      "law_evals": 4830,
+      "root_geometry_evals": 437,
+      "total_geometry_evals": 5267,
+      "sum_median_ms": 3.523706
+    },
+    "all": {
+      "n": 18,
+      "failed": 0,
+      "false_safe": 0,
+      "warnings": 0,
+      "flagged": 12,
+      "max_error": 5.10702591327572e-15,
+      "law_evals": 1386,
+      "root_geometry_evals": 437,
+      "total_geometry_evals": 1823,
+      "sum_median_ms": 1.340169
+    }
+  }
+}

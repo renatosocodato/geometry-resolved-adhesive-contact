@@ -1,0 +1,15 @@
+{
+  "n_root_comparisons": 26,
+  "root_count_mismatches": [],
+  "max_root_difference_rad": 1.9539925233402755e-14,
+  "circular_limits": [
+    {
+      "id": "r0.28209479177387814_b0.1_zero_e0.03",
+      "abs_difference_pN": 0.0
+    },
+    {
+      "id": "r0.28209479177387814_b0.1_zero_e0.15",
+      "abs_difference_pN": 0.0
+    }
+  ]
+}

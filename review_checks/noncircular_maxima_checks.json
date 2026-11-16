@@ -1,0 +1,23 @@
+[
+  {
+    "method": "gk",
+    "id": "b0.0_pi_e0.13",
+    "saved_binary64_error_pN": "6.73030044889833e-10",
+    "reference_45_vs_65_pN": "1.04513938793e-48",
+    "force_error_vs_65_pN": "6.73030044574e-10"
+  },
+  {
+    "method": "guarded",
+    "id": "b0.0_zero_e0.31",
+    "saved_binary64_error_pN": "2.1121593363204738e-10",
+    "reference_45_vs_65_pN": "2.15931232874e-46",
+    "force_error_vs_65_pN": "2.11216031012e-10"
+  },
+  {
+    "method": "all",
+    "id": "control_h0.05",
+    "saved_binary64_error_pN": "5.10702591327572e-15",
+    "reference_45_vs_65_pN": "7.33326597344e-47",
+    "force_error_vs_65_pN": "5.18373649502e-15"
+  }
+]

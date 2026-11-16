@@ -1,0 +1,30 @@
+{
+  "circular_n4": {
+    "cases": 52,
+    "max_error_pN": 3.6803429228626783e-06,
+    "tolerance_exceedances": 30,
+    "force_evaluations": 512,
+    "root_gap_evaluations": 0
+  },
+  "circular_n8": {
+    "cases": 52,
+    "max_error_pN": 1.7763568394002505e-15,
+    "tolerance_exceedances": 0,
+    "force_evaluations": 1024,
+    "root_gap_evaluations": 0
+  },
+  "noncircular_n4": {
+    "cases": 18,
+    "max_error_pN": 0.07347956724614413,
+    "tolerance_exceedances": 13,
+    "force_evaluations": 176,
+    "root_gap_evaluations": 437
+  },
+  "noncircular_n8": {
+    "cases": 18,
+    "max_error_pN": 0.0016863259061796754,
+    "tolerance_exceedances": 9,
+    "force_evaluations": 352,
+    "root_gap_evaluations": 437
+  }
+}

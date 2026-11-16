@@ -1,0 +1,40 @@
+{
+  "beta0.0_global": {
+    "false_safe": 0,
+    "underestimate": 0,
+    "cases": 27,
+    "maximum_force_error": 2.7755575615628914e-17
+  },
+  "beta0.0_split": {
+    "false_safe": 0,
+    "underestimate": 0,
+    "cases": 27,
+    "maximum_force_error": 2.7755575615628914e-17
+  },
+  "beta0.08_global": {
+    "false_safe": 0,
+    "underestimate": 2,
+    "cases": 27,
+    "maximum_force_error": 7.334386172433297e-05
+  },
+  "beta0.08_split": {
+    "false_safe": 0,
+    "underestimate": 0,
+    "cases": 27,
+    "maximum_force_error": 9.89587781050072e-06
+  },
+  "reference_checks": {
+    "0.0": {
+      "scipy": 0.0038140176847004346,
+      "mp_40": "0.00381401768470216",
+      "difference": 1.726049858596923e-15,
+      "scipy_error_estimate": 4.2344102498819533e-17
+    },
+    "0.08": {
+      "scipy": 0.02798949442002609,
+      "mp_40": "0.0279894944200259",
+      "difference": 2.1510571102112408e-16,
+      "scipy_error_estimate": 2.9323657943765886e-16
+    }
+  }
+}
