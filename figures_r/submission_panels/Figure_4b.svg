@@ -65,7 +65,7 @@
 <text x='172.12' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='21.39px' lengthAdjust='spacingAndGlyphs'>g = 0</text>
 <text x='220.88' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='19.55px' lengthAdjust='spacingAndGlyphs'>Both</text>
 <text x='147.74' y='177.27' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='93.41px' lengthAdjust='spacingAndGlyphs'>Supplied breakpoints</text>
-<text transform='translate(12.15,79.73) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='110.05px' lengthAdjust='spacingAndGlyphs'>Absolute force error (pN)</text>
+<text transform='translate(12.15,79.73) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='102.25px' lengthAdjust='spacingAndGlyphs'>Error vs reference (pN)</text>
 <rect x='86.82' y='189.15' width='121.83' height='18.47' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <rect x='91.80' y='194.13' width='17.28' height='8.50' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <line x1='93.53' y1='198.38' x2='107.36' y2='198.38' style='stroke-width: 1.07; stroke: #315778; stroke-opacity: 0.80; stroke-linecap: butt;' />

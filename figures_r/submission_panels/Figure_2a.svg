@@ -112,7 +112,7 @@
 <text x='194.28' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='24.28px' lengthAdjust='spacingAndGlyphs'>1e-08</text>
 <text x='240.83' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='24.28px' lengthAdjust='spacingAndGlyphs'>1e-05</text>
 <text x='147.74' y='177.27' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='106.70px' lengthAdjust='spacingAndGlyphs'>GK estimated error (pN)</text>
-<text transform='translate(12.15,79.73) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='73.91px' lengthAdjust='spacingAndGlyphs'>Actual error (pN)</text>
+<text transform='translate(12.15,79.73) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='102.25px' lengthAdjust='spacingAndGlyphs'>Error vs reference (pN)</text>
 <rect x='58.49' y='189.15' width='178.49' height='18.47' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <rect x='63.48' y='194.13' width='17.28' height='8.50' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <polygon points='72.12,194.51 75.47,200.32 68.76,200.32 ' style='stroke-width: 0.50; stroke: #202B37; fill: #C29522;' />

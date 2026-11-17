@@ -65,7 +65,7 @@
 <text x='178.77' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='10.56px' lengthAdjust='spacingAndGlyphs'>32</text>
 <text x='240.83' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='10.56px' lengthAdjust='spacingAndGlyphs'>64</text>
 <text x='147.74' y='177.27' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='82.83px' lengthAdjust='spacingAndGlyphs'>Axial Gauss points</text>
-<text transform='translate(12.15,79.73) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='114.45px' lengthAdjust='spacingAndGlyphs'>Maximum force error (pN)</text>
+<text transform='translate(12.15,79.73) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='122.81px' lengthAdjust='spacingAndGlyphs'>Max error vs reference (pN)</text>
 <rect x='77.63' y='189.15' width='140.22' height='18.47' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <rect x='82.61' y='194.13' width='17.28' height='8.50' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <line x1='84.34' y1='198.38' x2='98.16' y2='198.38' style='stroke-width: 1.17; stroke: #315778; stroke-linecap: butt;' />

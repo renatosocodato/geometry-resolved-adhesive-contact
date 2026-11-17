@@ -121,7 +121,7 @@
 <text x='428.14' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='21.39px' lengthAdjust='spacingAndGlyphs'>g = 0</text>
 <text x='476.34' y='165.77' text-anchor='middle' style='font-size: 9.50px;fill: #202B37; font-family: "Arial";' textLength='19.55px' lengthAdjust='spacingAndGlyphs'>Both</text>
 <text x='404.05' y='177.27' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='93.41px' lengthAdjust='spacingAndGlyphs'>Supplied breakpoints</text>
-<text transform='translate(269.64,83.22) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='110.05px' lengthAdjust='spacingAndGlyphs'>Absolute force error (pN)</text>
+<text transform='translate(269.64,83.22) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='102.25px' lengthAdjust='spacingAndGlyphs'>Error vs reference (pN)</text>
 <rect x='343.13' y='189.15' width='121.83' height='18.47' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <rect x='348.11' y='194.13' width='17.28' height='8.50' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <line x1='349.84' y1='198.38' x2='363.67' y2='198.38' style='stroke-width: 1.07; stroke: #315778; stroke-opacity: 0.80; stroke-linecap: butt;' />
@@ -176,7 +176,7 @@
 <text x='148.93' y='377.66' text-anchor='middle' style='font-size: 8.50px;fill: #202B37; font-family: "Arial";' textLength='27.89px' lengthAdjust='spacingAndGlyphs'>Fixed 8</text>
 <text x='212.18' y='377.66' text-anchor='middle' style='font-size: 8.50px;fill: #202B37; font-family: "Arial";' textLength='31.19px' lengthAdjust='spacingAndGlyphs'>Split GK</text>
 <text x='148.93' y='388.91' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='66.72px' lengthAdjust='spacingAndGlyphs'>Integration rule</text>
-<text transform='translate(14.53,295.82) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='130.03px' lengthAdjust='spacingAndGlyphs'>Maximum absolute error (pN)</text>
+<text transform='translate(14.53,295.82) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='122.81px' lengthAdjust='spacingAndGlyphs'>Max error vs reference (pN)</text>
 <text x='3.62' y='226.56' style='font-size: 13.00px; font-weight: bold; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>c</text>
 </g>
 <defs>
@@ -224,7 +224,7 @@
 <text x='404.05' y='377.66' text-anchor='middle' style='font-size: 8.50px;fill: #202B37; font-family: "Arial";' textLength='27.89px' lengthAdjust='spacingAndGlyphs'>Fixed 8</text>
 <text x='467.30' y='377.66' text-anchor='middle' style='font-size: 8.50px;fill: #202B37; font-family: "Arial";' textLength='31.19px' lengthAdjust='spacingAndGlyphs'>Split GK</text>
 <text x='404.05' y='388.91' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='66.72px' lengthAdjust='spacingAndGlyphs'>Integration rule</text>
-<text transform='translate(267.26,295.82) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='130.03px' lengthAdjust='spacingAndGlyphs'>Maximum absolute error (pN)</text>
+<text transform='translate(267.26,295.82) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='122.81px' lengthAdjust='spacingAndGlyphs'>Max error vs reference (pN)</text>
 <text x='259.09' y='226.56' style='font-size: 13.00px; font-weight: bold; font-family: "Arial";' textLength='7.94px' lengthAdjust='spacingAndGlyphs'>d</text>
 </g>
 </g>

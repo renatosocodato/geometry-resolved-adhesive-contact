@@ -61,7 +61,7 @@
 <text x='147.74' y='194.45' text-anchor='middle' style='font-size: 8.50px;fill: #202B37; font-family: "Arial";' textLength='27.89px' lengthAdjust='spacingAndGlyphs'>Fixed 8</text>
 <text x='211.74' y='194.45' text-anchor='middle' style='font-size: 8.50px;fill: #202B37; font-family: "Arial";' textLength='31.19px' lengthAdjust='spacingAndGlyphs'>Split GK</text>
 <text x='147.74' y='205.70' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='66.72px' lengthAdjust='spacingAndGlyphs'>Integration rule</text>
-<text transform='translate(12.15,97.92) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='130.03px' lengthAdjust='spacingAndGlyphs'>Maximum absolute error (pN)</text>
+<text transform='translate(12.15,97.92) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='122.81px' lengthAdjust='spacingAndGlyphs'>Max error vs reference (pN)</text>
 <text x='3.62' y='13.96' style='font-size: 13.00px; font-weight: bold; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>c</text>
 </g>
 </g>

@@ -66,7 +66,7 @@ mapping<-c(gk='Adaptive GK',guarded='Guarded GK',all='Split GK')
 d$method<-factor(unname(mapping[d$method]),levels=names(pal))
 base<-d[d$method=='Adaptive GK',]; floor<-1e-17
 
-# Figure 2a: estimated versus actual force error; points are individual cases.
+# Figure 2a: estimated error versus error relative to the reference.
 base$actual_plot<-pmax(base$abs_error,floor);base$estimate_plot<-pmax(base$estimate,floor)
 base$flag<-ifelse(tolower(as.character(base$false_safe))=='true','False safe',ifelse(tolower(as.character(base$warning))=='true','Warning','Other'))
 qa<-ggplot(base,aes(estimate_plot,actual_plot))+
@@ -79,7 +79,7 @@ qa<-ggplot(base,aes(estimate_plot,actual_plot))+
  scale_fill_manual(values=c('False safe'=gold,'Warning'=blue,'Other'=navy))+
  scale_x_log10(limits=c(floor,1e-5),breaks=c(1e-16,1e-12,1e-8,1e-5))+
  scale_y_log10(limits=c(floor,1e-6),breaks=c(1e-16,1e-12,1e-8))+
- labs(x='GK estimated error (pN)',y='Actual error (pN)')+theme_clean()+
+ labs(x='GK estimated error (pN)',y='Error vs reference (pN)')+theme_clean()+
  theme(legend.position='bottom',legend.text=element_text(size=8.5))
 
 # Figure 2b: all per-case errors, with deterministic offsets rather than stochastic jitter.
@@ -91,7 +91,7 @@ qb<-ggplot(points,aes(x,error,colour=method))+geom_hline(yintercept=tau,linetype
  geom_point(size=1.25,alpha=.8)+scale_colour_manual(values=pal,drop=FALSE)+
  scale_x_continuous(breaks=1:4,labels=c('Adaptive\nGK','Guarded\nGK','Split\nGK','Closed\nform'))+
  scale_y_log10(limits=c(floor,1e-6),breaks=c(1e-16,1e-12,1e-8))+
- labs(x=NULL,y='Absolute force error (pN)')+theme_clean()+theme(legend.position='none')
+ labs(x=NULL,y='Error vs reference (pN)')+theme_clean()+theme(legend.position='none')
 
 # Figure 2c: explicit law-evaluation count (closed form has different operation types).
 evals<-aggregate(evaluations~method,d,sum);evals$method<-factor(evals$method,levels=rev(names(pal)[1:3]))
@@ -112,7 +112,7 @@ qd<-ggplot(axmax,aes(n,force_error,colour=method,shape=method))+
  scale_shape_manual(values=c('Global axial'=16,'Split axial'=17))+
  scale_x_continuous(trans='log2',breaks=c(8,16,32,64))+
  scale_y_log10(breaks=c(1e-8,1e-6,1e-4))+
- labs(x='Axial Gauss points',y='Maximum force error (pN)')+theme_clean()+
+ labs(x='Axial Gauss points',y='Max error vs reference (pN)')+theme_clean()+
  theme(legend.position='bottom',legend.text=element_text(size=8.5))
 fig2<-plot_grid(qa,qb,qc,qd,ncol=2,labels=c('a','b','c','d'),label_size=13,label_fontfamily='Arial',align='hv',axis='tblr')
 
@@ -138,7 +138,7 @@ rb<-ggplot(nc,aes(method_label,error_plot,group=id))+
  geom_point(aes(colour=method_label),size=1.55,alpha=.9)+
  scale_colour_manual(values=pal,guide='none')+
  scale_y_log10(limits=c(floor,1e-7),breaks=c(1e-16,1e-12,1e-8))+
- labs(x=NULL,y='Absolute force error (pN)')+theme_clean()+
+ labs(x=NULL,y='Error vs reference (pN)')+theme_clean()+
  theme(axis.text.x=element_text(size=9))
 
 # Figure 3c: both integrand geometry and additional root-search geometry calls.
@@ -191,7 +191,7 @@ sb <- ggplot(iso,aes(strategy,error_plot,group=case,colour=case,shape=case))+
  scale_colour_manual(values=c('0.03 rad'=navy,'0.15 rad'=gold))+
  scale_shape_manual(values=c('0.03 rad'=16,'0.15 rad'=17))+
  scale_y_log10(limits=c(1e-17,1e-6),breaks=c(1e-16,1e-12,1e-8))+
- labs(x='Supplied breakpoints',y='Absolute force error (pN)')+theme_clean()+
+ labs(x='Supplied breakpoints',y='Error vs reference (pN)')+theme_clean()+
  theme(legend.text=element_text(size=8.5))
 fixed <- read.csv(file.path(review_dir,'fixed_segment_gauss.csv'),stringsAsFactors=FALSE)
 make_fixed_panel <- function(which_geometry, primary) {
@@ -215,7 +215,7 @@ make_fixed_panel <- function(which_geometry, primary) {
    scale_shape_manual(values=c('Fixed 4'=15,'Fixed 8'=17,'Split GK'=16),guide='none')+
    scale_y_log10(limits=if(which_geometry=='circular') c(1e-17,1e-3) else c(1e-17,1e1),
                  breaks=if(which_geometry=='circular') c(1e-16,1e-12,1e-8,1e-4) else c(1e-16,1e-12,1e-8,1e-4,1))+
-   labs(x='Integration rule',y='Maximum absolute error (pN)')+theme_clean()+
+   labs(x='Integration rule',y='Max error vs reference (pN)')+theme_clean()+
    theme(axis.text.x=element_text(size=8.5),legend.position='none',plot.margin=margin(12,5,5,5))
  g
 }

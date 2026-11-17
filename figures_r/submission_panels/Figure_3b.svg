@@ -125,7 +125,7 @@
 <text x='89.05' y='220.07' text-anchor='middle' style='font-size: 9.00px;fill: #202B37; font-family: "Arial";' textLength='50.50px' lengthAdjust='spacingAndGlyphs'>Adaptive GK</text>
 <text x='161.91' y='220.07' text-anchor='middle' style='font-size: 9.00px;fill: #202B37; font-family: "Arial";' textLength='50.50px' lengthAdjust='spacingAndGlyphs'>Guarded GK</text>
 <text x='234.77' y='220.07' text-anchor='middle' style='font-size: 9.00px;fill: #202B37; font-family: "Arial";' textLength='33.00px' lengthAdjust='spacingAndGlyphs'>Split GK</text>
-<text transform='translate(12.15,107.06) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='110.05px' lengthAdjust='spacingAndGlyphs'>Absolute force error (pN)</text>
+<text transform='translate(12.15,107.06) rotate(-90)' text-anchor='middle' style='font-size: 10.00px;fill: #202B37; font-family: "Arial";' textLength='102.25px' lengthAdjust='spacingAndGlyphs'>Error vs reference (pN)</text>
 <text x='3.97' y='13.96' style='font-size: 13.00px; font-weight: bold; font-family: "Arial";' textLength='7.94px' lengthAdjust='spacingAndGlyphs'>b</text>
 </g>
 </g>
