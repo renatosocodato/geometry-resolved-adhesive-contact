@@ -18,4 +18,12 @@ for row in failed:
    return m.K*g if g<=0 else 0. if g>=m.A else 4*m.W*g/m.A**2*(1-(g/m.A)**2)
   v,e,info,*msg=quad(f,0,math.pi,epsabs=m.TAU/fac,epsrel=0,points=points,limit=100,full_output=1)
   force=-fac*v;out.append({'id':c['id'],'strategy':name,'points_rad':points,'abs_error_pN':abs(force-ref),'estimated_error_pN':fac*e,'evaluations':calls[0],'subintervals':info['last'],'warning':bool(msg)})
-(p/'isolated_breakpoints.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
+(p/'isolated_breakpoints.json').write_text(json.dumps(out,indent=2)+'\n')
+# Figure 4 reads the tabular output; regenerate it with the diagnostic, rather
+# than relying on a separately maintained CSV from a previous run.
+fields=['id','strategy','abs_error_pN','estimated_error_pN','evaluations','subintervals','warning']
+with (p/'isolated_breakpoints.csv').open('w',newline='') as f:
+ writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore')
+ writer.writeheader()
+ writer.writerows(out)
+print(json.dumps(out,indent=2))
