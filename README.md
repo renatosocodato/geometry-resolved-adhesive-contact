@@ -10,7 +10,7 @@ The `review_checks` directory contains post hoc checks. To reproduce the inputs 
 
 Set up the Python dependencies with `python3 -m pip install -r requirements.txt` in a virtual environment. Install the R packages with `install.packages(c("ggplot2", "cowplot", "svglite", "ragg"))`. The plotting code uses Arial; if it is unavailable, install a licensed or system-provided Arial font before reproducing the publication typography. Cairo support is needed for the vector PDF device. Computed results can be checked without R; the listed R packages and fonts are needed only for figures. Timings are descriptive, are remeasured on each run, and will vary across machines and workloads.
 
-Author: Renato Socodato, University of Porto. The code and data accompany the manuscript. No licence has yet been selected; contact the author regarding reuse.
+Author: Renato Socodato, University of Porto. The code and data accompany the manuscript. The Python and R code in this repository is distributed under the MIT License (see `LICENSE`). The numerical data, figures and other non-code materials are not covered by that code licence; contact the author regarding their reuse.
 
 The computed quantities describe idealized contact models and synthetic configurations; they are not measurements from biological specimens. The 52 circular and 18 noncircular cases, near-endpoint selection and post hoc checks are described in the manuscript and protocols. The strongest observed accuracy violations occur in strongly interpenetrating penalty-model configurations.
 
