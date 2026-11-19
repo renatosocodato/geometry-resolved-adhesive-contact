@@ -1,4 +1,65 @@
-# Geometry-resolved adhesive contact: code and numerical results
+# Geometry-Resolved Adhesive Contact
+
+Version 0.1.0 provides a Python interface for the plane-normal force on
+prescribed circular and monotone-gap noncircular extruded walls against a rigid
+plane, using the piecewise-smooth adhesive law of the companion paper.
+All inputs use micrometres and piconewtons. Stiffness is in pN/µm³ and adhesion
+energy per area is in pN/µm. The quantity returned by the quadrature is an error
+estimate within the assumed model.
+
+## Install and run
+
+Install from the source directory with `python -m pip install .`, or install the
+wheel supplied with the release. Use Python 3.11 or later.
+
+```sh
+adhesive-contact --height-um 0.32 --radius-um 0.28209479177387814
+adhesive-contact --height-um 0.30 --rx-um 0.36 --ry-um 0.28209479177387814 --q-um 0.045
+```
+
+```python
+from geometry_resolved_adhesive_contact import contact_force
+
+result = contact_force(height_um=0.32, radius_um=0.28209479177387814)
+print(result.force_pn, result.estimated_error_pn)
+```
+
+Use `--method gk`, `guarded` or `all` to choose how interior transitions are
+supplied. The JSON and Python outputs distinguish force-integrand evaluations
+from gap-search evaluations, report the supplied breakpoints, and expose
+quadrature warnings. The noncircular model requires `ry > 4*abs(q)`.
+The model assumes prescribed walls and does not solve for deformation.
+
+## Reproduce the paper
+
+Run from the unpacked **paper reproduction archive** or source checkout.
+Install the pinned numerical dependencies with
+`python -m pip install -r requirements.txt`. For graphical dependencies,
+see the R setup below.
+
+```sh
+python scripts/reproduce.py --output reproduced
+python scripts/reproduce.py --figures-only --output figures-from-archive
+python -m unittest discover -s tests
+```
+
+The first command recomputes the benchmarks, diagnostic tables and all four R
+figures with their 14 vector panels. The second renders the archived inputs.
+Use `--skip-figures` for a numerical-only rerun. Each command requires a fresh
+output directory, keeping the archived CSV and JSON files intact.
+
+| Figure | Inputs |
+| --- | --- |
+| 1 | Prescribed geometry and contact-law parameters in the R source |
+| 2 | Results from scripts 42, 45 and 48 |
+| 3 | Results from script 51 |
+| 4 | Results from scripts 45 and 51 and the fixed-order and isolated-breakpoint diagnostics |
+
+The interface calls the same numerical rules as the original benchmarks.
+The original standalone scripts and reference implementations remain available
+for comparisons against the paper. Cite the software using `CITATION.cff`.
+
+## Archived benchmark details
 
 The CSV and JSON files are the saved results reported in the manuscript. Files 42, 45, 48 and 51 generate the inclined-wall, circular quadrature, circular closed-form and noncircular comparisons, respectively; 54 checks the noncircular boundary roots and circular limit. Protocols 41, 44, 47, 50 and 53 describe the corresponding runs. These synthetic configurations are not experimental observations.
 

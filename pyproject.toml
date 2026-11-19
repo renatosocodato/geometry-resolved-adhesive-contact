@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geometry-resolved-adhesive-contact"
+version = "0.1.0"
+description = "Plane-normal adhesive contact force on prescribed extruded walls"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Renato Socodato"}]
+dependencies = ["scipy==1.16.3"]
+
+[project.scripts]
+adhesive-contact = "geometry_resolved_adhesive_contact.cli:main"
+
+[project.urls]
+Repository = "https://github.com/renatosocodato/geometry-resolved-adhesive-contact"
+
+[tool.setuptools.packages.find]
+where = ["src"]

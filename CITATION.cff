@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the version you used."
+type: software
+title: Geometry-Resolved Adhesive Contact
+version: 0.1.0
+authors:
+  - family-names: Socodato
+    given-names: Renato
+    orcid: "https://orcid.org/0000-0002-6882-5020"
+repository-code: "https://github.com/renatosocodato/geometry-resolved-adhesive-contact"
