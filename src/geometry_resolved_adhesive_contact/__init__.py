@@ -7,11 +7,12 @@ from scipy.integrate import quad
 from scipy.optimize import brentq
 
 from .custom import CustomForceResult, integrate_contact
-from .transitions import TransitionResult, locate_transitions
+from .transitions import (MonotonicityResult, TransitionResult,
+                          detect_monotone_cuts, locate_transitions)
 
 __all__ = [
-    "CustomForceResult", "ForceResult", "TransitionResult",
-    "contact_force", "integrate_contact", "locate_transitions",
+    "CustomForceResult", "ForceResult", "MonotonicityResult", "TransitionResult",
+    "contact_force", "detect_monotone_cuts", "integrate_contact", "locate_transitions",
 ]
 
 

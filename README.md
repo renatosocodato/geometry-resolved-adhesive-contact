@@ -59,9 +59,13 @@ gap callback, interval, internal cuts that partition the gap into regions
 of strict monotonicity (or constant regions away from thresholds), and
 the law's gap thresholds. Pass the returned `breakpoints` to
 `integrate_contact`. Splitting at known extrema lets the search distinguish
-multiple crossings and an exact tangency at a cut. The caller supplies the
-partition, and the locator neither verifies it nor discovers interior
-extrema. A plateau on a threshold is outside the supported isolated-root
+multiple crossings and an exact tangency at a cut. The bracketed locator takes the partition as input. To generate
+candidate cuts automatically, call `detect_monotone_cuts` with a continuous
+gap-slope callback and an interval, then pass its `cuts` to
+`locate_transitions`. The scan looks for slope sign changes. Its finite
+resolution can miss multiple extrema in a single cell. See the
+[automatic search benchmark](examples/automatic_transitions/README.md)
+for the full cost from slope scanning through force integration. A plateau on a threshold is outside the supported isolated-root
 case. Check quadrature warnings and use an independent reference where
 accuracy matters.
 
