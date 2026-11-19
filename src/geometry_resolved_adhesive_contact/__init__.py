@@ -6,6 +6,10 @@ import math
 from scipy.integrate import quad
 from scipy.optimize import brentq
 
+from .custom import CustomForceResult, integrate_contact
+
+__all__ = ["CustomForceResult", "ForceResult", "contact_force", "integrate_contact"]
+
 
 @dataclass(frozen=True)
 class ForceResult:

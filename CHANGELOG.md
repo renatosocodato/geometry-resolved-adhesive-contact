@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Adds a Python interface for user-defined signed gaps, section metrics and plane-normal traction laws.
+- Supports caller-specified breakpoints, including multiple crossings of the same branch threshold.
+- Adds an independently integrated wavy-wall example and tests for the custom interface.
+
 ## 0.1.0
 
 - First installable Python release, with an API and CLI for circular and monotone-gap noncircular extruded walls.

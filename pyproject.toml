@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geometry-resolved-adhesive-contact"
-version = "0.1.0"
+version = "0.2.0"
 description = "Plane-normal adhesive contact force on prescribed extruded walls"
 readme = "README.md"
 requires-python = ">=3.11"

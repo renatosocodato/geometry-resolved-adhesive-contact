@@ -1,6 +1,6 @@
 # Geometry-Resolved Adhesive Contact
 
-Version 0.1.0 provides a Python interface for the plane-normal force on
+Version 0.2.0 provides a Python interface for the plane-normal force on
 prescribed circular and monotone-gap noncircular extruded walls against a rigid
 plane, using the piecewise-smooth adhesive law of the companion paper.
 All inputs use micrometres and piconewtons. Stiffness is in pN/µm³ and adhesion
@@ -29,6 +29,40 @@ supplied. The JSON and Python outputs distinguish force-integrand evaluations
 from gap-search evaluations, report the supplied breakpoints, and expose
 quadrature warnings. The noncircular model requires `ry > 4*abs(q)`.
 The model assumes prescribed walls and does not solve for deformation.
+
+## Supply your own section and traction law
+
+Use the Python API when your geometry or law differs from the built-in
+models. Pass the signed gap and arc length per unit parameter as functions
+of the section coordinate, and pass the signed plane-normal traction as a
+function of gap. Supply any known interior breakpoints in the section
+coordinate, including all crossings of thresholds in a nonmonotone gap.
+The section integral is multiplied by extrusion length once. Pass the full
+section unless you intend to compute the force on only part of it.
+
+```python
+from geometry_resolved_adhesive_contact import integrate_contact
+
+result = integrate_contact(
+    gap_um=lambda t: t - 0.5,
+    arc_length_rate_um=lambda t: 1.0,
+    traction_pn_um2=lambda g: 10.0 * max(-g, 0.0),
+    interval=(0.0, 1.0),
+    length_um=0.75,
+    breakpoints=(0.5,),
+)
+print(result.force_pn)  # 0.9375 pN, positive away from the plane
+```
+
+The callback interface leaves transition location to the caller. Check
+quadrature warnings and use an independent reference where accuracy matters.
+See [the wavy-wall example](examples/README.md) for a nonmonotone geometry
+with eight transitions and a closed-form force. Run it from this archive
+with `python examples/wavy_wall.py` after installing the package.
+
+Version 0.1.0 is the original software snapshot for the paper. The original
+benchmark scripts and archived evidence are also included here unchanged.
+The CLI continues to accept the built-in geometries and contact law.
 
 ## Reproduce the paper
 
