@@ -7,8 +7,12 @@ from scipy.integrate import quad
 from scipy.optimize import brentq
 
 from .custom import CustomForceResult, integrate_contact
+from .transitions import TransitionResult, locate_transitions
 
-__all__ = ["CustomForceResult", "ForceResult", "contact_force", "integrate_contact"]
+__all__ = [
+    "CustomForceResult", "ForceResult", "TransitionResult",
+    "contact_force", "integrate_contact", "locate_transitions",
+]
 
 
 @dataclass(frozen=True)

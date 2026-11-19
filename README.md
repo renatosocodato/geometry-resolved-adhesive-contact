@@ -54,8 +54,21 @@ result = integrate_contact(
 print(result.force_pn)  # 0.9375 pN, positive away from the plane
 ```
 
-The callback interface leaves transition location to the caller. Check
-quadrature warnings and use an independent reference where accuracy matters.
+For numerical transition locations, call `locate_transitions` with the
+gap callback, interval, internal cuts that partition the gap into regions
+of strict monotonicity (or constant regions away from thresholds), and
+the law's gap thresholds. Pass the returned `breakpoints` to
+`integrate_contact`. Splitting at known extrema lets the search distinguish
+multiple crossings and an exact tangency at a cut. The caller supplies the
+partition, and the locator neither verifies it nor discovers interior
+extrema. A plateau on a threshold is outside the supported isolated-root
+case. Check quadrature warnings and use an independent reference where
+accuracy matters.
+
+See the [narrow-contact benchmark](examples/narrow_contact/PROTOCOL.md) for
+an exact-reference comparison with no points, analytical points and
+numerically located points. It counts gap-search and force-integrand
+evaluations separately.
 See [the wavy-wall example](examples/README.md) for a nonmonotone geometry
 with eight transitions and a closed-form force. Run it from this archive
 with `python examples/wavy_wall.py` after installing the package.
