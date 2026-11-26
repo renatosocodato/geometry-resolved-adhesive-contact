@@ -110,6 +110,13 @@ The interface calls the same numerical rules as the original benchmarks.
 The original standalone scripts and reference implementations remain available
 for comparisons against the paper. Cite the software using `CITATION.cff`.
 
+## Formal verification with Lean 4
+
+The [standalone Lean module](verification/lean/) checks the mathematical
+statements of the prescribed contact model in the paper. It includes a
+statement-to-theorem map and pins the Lean and Mathlib versions. The
+numerical benchmarks and figure reproduction use the workflow above.
+
 ## Archived benchmark details
 
 The CSV and JSON files are the saved results reported in the manuscript. Files 42, 45, 48 and 51 generate the inclined-wall, circular quadrature, circular closed-form and noncircular comparisons, respectively; 54 checks the noncircular boundary roots and circular limit. Protocols 41, 44, 47, 50 and 53 describe the corresponding runs. These synthetic configurations are not experimental observations.
@@ -122,7 +129,7 @@ The `review_checks` directory contains post hoc checks. To reproduce the inputs 
 
 Set up the Python dependencies with `python3 -m pip install -r requirements.txt` in a virtual environment. Install the R packages with `install.packages(c("ggplot2", "cowplot", "svglite", "ragg"))`. The plotting code uses Arial; if it is unavailable, install a licensed or system-provided Arial font before reproducing the publication typography. Cairo support is needed for the vector PDF device. Computed results can be checked without R; the listed R packages and fonts are needed only for figures. Timings are descriptive, are remeasured on each run, and will vary across machines and workloads.
 
-Author: Renato Socodato, University of Porto. The code and data accompany the manuscript. The Python and R code in this repository is distributed under the MIT License (see `LICENSE`). The numerical data, figures and other non-code materials are not covered by that code licence; contact the author regarding their reuse.
+Author: Renato Socodato, University of Porto. The code and data accompany the manuscript. The Python, R and Lean code in this repository is distributed under the MIT License (see `LICENSE`). The numerical data, figures and other non-code materials are not covered by that code licence; contact the author regarding their reuse.
 
 The computed quantities describe idealized contact models and synthetic configurations; they are not measurements from biological specimens. The 52 circular and 18 noncircular cases, near-endpoint selection and post hoc checks are described in the manuscript and protocols. The strongest observed accuracy violations occur in strongly interpenetrating penalty-model configurations.
 
